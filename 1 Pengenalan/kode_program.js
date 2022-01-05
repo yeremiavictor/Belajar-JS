@@ -1,0 +1,1 @@
+alert("Hallo, ini adalah Program JS external lhoo");

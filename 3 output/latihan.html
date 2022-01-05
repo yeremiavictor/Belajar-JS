@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan</title>
+        <script>
+            console.log("aku sedang latihan"); // akan muncul pada log console browser
+            window.alert("Latihan"); // muncul ketika load web
+
+            function latian(){ // function latian akan di munculkan pada button
+                alert("ini halo dari fuction");
+            }
+
+            document.write("<strong>Yeremia Victor </strong>") // menampilkan tulisan ini pada body
+        </script>
+    </head>
+    <body>
+        <button onclick="latian()">Click me</button>
+
+        <br>
+        Saya akan menampilkan js pada div ini <br>
+        <div id="hasil"> </div>
+
+        <script>
+            // membuat objek elemen
+            var hasil = document.getElementById("hasil");
+
+            // menampilkan output ke elemen hasil
+            hasil.innerHTML = "<img src='img.jpg'>";
+        </script>
+
+    </body>
+
+</html>

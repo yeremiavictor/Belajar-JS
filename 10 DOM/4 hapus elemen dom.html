@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            DOM API JS
+        </title>
+    </head>
+    <body>
+        <h2 id="judul"> Delete saya </h2>
+        <script>
+            //memilih elemen berdasarkan ID
+            var h2 =document.getElementById("judul");
+
+            command("Apakah Anda ingin menghapus? ")
+
+            //hapus elemen
+            h2.remove();
+
+            alert("elemen sudah dihapus" + h2);
+
+        </script>
+        
+    </body>
+</html>

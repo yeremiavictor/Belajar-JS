@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Perulangan dengan foreach
+        </title>
+    </head>
+    <body>
+        <script>
+
+            // ini adalah perulangan tanpa menggunakan in
+            var language = ["js","html","css","typescript"];
+
+            for(i = 0; i<language.length; i++){
+                document.write(i+". "+language[i]+"<br>");
+            }
+
+                // enter
+                    for (i=0; i<10; i++){
+                        document.write("==");
+                    }document.write("</br>");
+                // enter
+
+            //ini adalah perulangan menggunakan in, lebih singkat dan mudah dari rumus diatas
+            for (i in language){
+                document.write(i+". "+language[i]+"<br>");
+            }
+
+                // enter
+                    for (i=0; i<10; i++){
+                        document.write("==");
+                    }document.write("</br>");
+                // enter
+
+
+            
+            // Contoh ke 2 dengan foreach
+            var days=["Senin","Selasa","Rabu","Kamis","Jumat","Sabtu","Minggu"];
+                    //menampilkan semua hari
+                    //dengan method foreach
+
+                    days.forEach(function(day){
+                        document.write("<p>" + day +  "</p>");
+                    });
+
+
+                // enter
+                    for (i=0; i<10; i++){
+                        document.write("==");
+                    }document.write("</br>");
+                // enter
+
+            // Method forEach memiliki parameter dengan fungsi callback, jadi dapat menggunakan arrow:
+                    days.forEach((day) =>{
+                        document.write("<p>"+day+"</p>")
+                    })
+
+        </script>
+    </body>
+</html>

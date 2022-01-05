@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Operasi Logika pada JS
+        </title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Nama Operator</td>
+                <td> Symbol</td>
+            </tr>
+            <tr>
+                <td>Logika And</td>
+                <td>&&</td>
+            </tr>
+            <tr>
+                <td>Logika Or</td>
+                <td>||</td>
+            </tr>
+            <tr>
+                <td>Negasi atau kebalikan</td>
+                <td>!</td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <script>
+            var aku = 20;
+            var kamu = 17;
+
+            var benar = aku > kamu;
+            var salah = aku < kamu;
+
+            //Logika And, apakah kedua pernyataan benar
+            var hasil = benar && salah;
+            document.write(benar+" and "+salah+"="+hasil+"<br>");
+
+            //Logika Or, apakah ada yang benar dari salah satu
+            var hasil = benar || salah;
+            document.write(benar+" or "+salah+"="+hasil+"<br>");
+
+            //Logika Not
+            var hasil = !benar;
+            document.write("!"+benar+"="+hasil+"<br>");
+
+        </script>
+    </body>
+</html>

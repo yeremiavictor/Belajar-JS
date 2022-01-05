@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Operator perbandingan java script
+        </title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Nama Operator</td>
+                <td> symbol </td>
+            </tr>
+            <tr>
+                <td>Lebih besar</td>
+                <td> > </td>
+            </tr>
+            <tr>
+                <td>Lebih kecil</td>
+                <td> < </td>
+            </tr>
+            <tr>
+                <td>Sama dengan </td>
+                <td> == atau === </td>
+            </tr>
+            <tr>
+                <td>tidak sama dengan </td>
+                <td> != atau !== </td>
+            </tr>
+            <tr>
+                <td>Lebih besar sama dengan</td>
+                <td> >= </td>
+            </tr>
+            <tr>
+                <td>Lebih kecil sama dengan</td>
+                <td> <=> </td>
+            </tr>
+        </table> <br> <br>
+
+        <script>
+            var aku = 20;
+            var kamu = 17;
+
+            //sama dengan
+            var hasil = aku == kamu;
+            document.write(aku+" == "+kamu+"="+hasil+"<br>");
+
+            //smaller
+            var hasil = aku < kamu;
+            document.write(aku+" < "+kamu+"="+hasil+"<br>");
+
+            //larger
+            var hasil = aku > kamu;
+            document.write(aku+" > "+kamu+"="+hasil+"<br>");
+
+            
+            //different
+            var hasil = aku != kamu;
+            document.write(aku+" != "+kamu+"="+hasil+"<br>");
+
+            //smallerequall
+            var hasil = aku <= kamu;
+            document.write(aku+" <= "+kamu+"="+hasil+"<br>");
+
+            //largerequall
+            var hasil = aku >= kamu;
+            document.write(aku+" >= "+kamu+"="+hasil+"<br>");
+
+            //== membandingkan nilai
+            //=== memandingkan tipe data
+
+            var a = "4" == 4; console.log(a); //true
+            var a = "4" === 4; console.log(a); //false
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            1 IF Js
+            
+        </title>
+    </head>
+    <body>
+        <script>
+            var nilai = prompt("masukan nilai antara 0-100");
+            var grade ="";
+
+            switch(true){
+                case nilai >= 85:
+                    grade = "A"
+                    break;
+
+                case nilai >= 70:
+                    grade = "B"
+                    break;
+
+                case nilai >= 60:
+                    grade = "C"
+                    break;
+                
+                case nilai >= 55:
+                    grade = "D"
+                    break;
+
+                default:
+                    grade = "E"
+                    break;
+
+            }
+
+            document.write("Anda mendapatkan nilai" + grade);
+
+            
+        </script>
+    </body>
+</html>

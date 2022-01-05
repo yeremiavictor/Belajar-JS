@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Perulangan For
+        </title>
+    </head>
+    <body>
+        Perulangan do/while akan melakukan perulangan sebanyak 1 kali terlebih dahulu, <br>
+         lalu mengecek kondisi yang ada di dalam kurung while.<br><br>
+        <script>
+            var ulangi = confirm("Mengulangi"); // munculkan notif ulang
+            var counter = 0;
+            
+
+            do {
+                counter++;
+                ulangi = confirm ("Mengulangi")
+            }while(ulangi)
+
+            document.write("Ulang ke" + counter);
+
+
+        </script>
+        
+    </body>
+</html>

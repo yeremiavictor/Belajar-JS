@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Nested Loop JS
+        </title>
+    </head>
+    <body>
+        <script>
+            //contoh 1
+            for(let i=0; i<10; i++){
+                for(let j=0; j<10; j++){
+                    document.write("<p> perulangan ke: "+i+","+j+"</p>");
+                }
+            }
+
+            //contoh 2
+            var ulangi = confirm("Apakah anda ingin mengulang? ");
+            var counter = 0;
+
+            while(ulangi){
+                counter++;
+                var bintang ="*".repeat(counter)+"<br>";
+                document.write(counter+": " + bintang);
+                ulangi = confirm("Apakah anda ingin mengulang? ");
+            }
+
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Perulangan For
+        </title>
+    </head>
+    <body>
+        <script>
+            var ulangi = confirm("Mengulangi"); // munculkan notif ulang
+            var counter = 0;
+
+            // while (ulangi){
+            //     var jawab = confirm("Mengulangi")
+            //     counter ++;
+            //     if(jawab == false){
+            //         ulangi = false;
+            //     }
+            // }
+
+            while(ulangi){ // kalau ditekan yes
+                counter++; //ditambah terus
+                ulangi = confirm("Apakah anda mau mengulang?"); // muncul notif ini lagi
+            }
+
+            document.write("Ulang ke" + counter);
+
+
+        </script>
+        
+    </body>
+</html>

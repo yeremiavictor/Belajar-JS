@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Bitwise JS
+        </title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td> Nama</td>
+                <td> Symbol Java</td>
+            </tr>
+            <tr>
+                <td> And</td>
+                <td>&</td>
+            </tr>
+            <tr>
+                <td> Or</td>
+                <td>|</td>
+            </tr>
+            <tr>
+                <td>Xor</td>
+                <td>^</td>
+            </tr>
+            <tr>
+                <td>Negasi/kebalikan</td>
+                <td>~</td>
+            </tr>
+            <tr>
+                <td>Left Shift</td>
+                <td><<</td>
+            </tr>
+            <tr>
+                <td>Right Shift</td>
+                <td>>></td>
+            </tr>
+            <tr>
+                <td>Left Shift (unsigned) </td>
+                <td><<<</td>
+            </tr>
+            <tr>
+                <td>Right Shift (unsigned) </td>
+                <td>>>></td>
+            </tr>
+        </table>
+        <p>
+            Operator bitvise berlaku untuk tipe data int, long, short, char dan byte <br>
+            untuk menghitung dari bit ke bit<br>
+            misalnya dalam var a = 60 dan b= 13 <br>
+            kalau dalam biner akan menjadi sbb <br>
+            a = 00111100 <br>
+            b = 00001101 <br>
+            perhatikan pada angka 1 dan 0 <br>
+            <br>
+
+            And<br>
+            a     = 00111100<br>
+            b     = 00001101<br>
+            a & b = 00001100<br>
+            <br>
+
+            OR<br>
+            a     = 00111100<br>
+            b     = 00001101<br>
+            a | b = 00111101<br>
+            <br><br>
+
+            XOR<br>
+            a     = 00111100<br>
+            b     = 00001101<br>
+            a ^ b = 00110001<br>
+            <br><br>
+            NOT<br>
+            a   = 00111100<br>
+            ~a  = 11000011<br>
+            <br><br>
+
+
+            
+
+            <script>
+                var x =4;
+                var y =3;
+
+                //operator bitwise and
+                var hasil = x & y;
+                document.write(x+" and "+y+" = "+hasil+"<br>");
+
+                //operator bitwise or
+                var hasil = x | y;
+                document.write(x+" or "+y+" = "+hasil+"<br>");
+
+                //operator bitwise Xor
+                var hasil = x ^ y;
+                document.write(x+" XOR "+y+" = "+hasil+"<br>");
+
+                //operator bitwise Negasi
+                var hasil = ~x;
+                document.write("Negasi" + x +"="+hasil+"<br>");
+
+                //operator bitwise Right shift
+                var hasil = x >> y;
+                document.write(x+" >> "+y+" = "+hasil+"<br>");
+
+                //operator bitwise Left shift
+                var hasil = x << y;
+                document.write(x+" << "+y+" = "+hasil+"<br>");
+
+                //operator bitwise Right shift
+                var hasil = x >>> y;
+                document.write(x+" >>> "+y+" = "+hasil+"<br>");
+
+
+
+            </script>
+
+
+        </p>
+    </body>
+</html>

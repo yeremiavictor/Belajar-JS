@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Operasi Aritmatika
+        </title>
+    </head>
+    <body>
+        <p>
+            Operasi aritmatika terdiri dari: 
+            <table >
+                <tr>
+                    <td>Nama operator </td>
+                    <td> symbol </td>
+                </tr>
+                <tr>
+                    <td>Jumlah</td>
+                    <td> + </td>
+                </tr>
+                <tr>
+                    <td>Kurang</td>
+                    <td> - </td>
+                </tr>
+                <tr>
+                    <td>Kali</td>
+                    <td> * </td>
+                    
+                </tr>
+                <tr>
+                    <td>Bagi</td>
+                    <td> / </td>
+                </tr>
+                <tr>
+                    <td>pangkat</td>
+                    <td> ** </td>
+                </tr>
+                <tr>
+                    <td>sisabagi</td>
+                    <td> % </td>
+                </tr>
+            </table>
+        </p>
+
+        <script>
+
+            // aritmatika
+            var a = 8;
+            var b = 2;
+            var c = 0;
+
+            c = a + b ;
+            document.write(a + " + " + b + " = " + c +"<br>"); 
+
+            c = a - b ;
+            document.write(a + " - " + b + " = " + c +"<br>");
+
+            c = a * b ;
+            document.write(a + " x " + b + " = " + c +"<br>");
+
+            c = a ** b ;
+            document.write(a + " pangkat " + b + " = " + c +"<br>");
+
+            c = a / b ;
+            document.write(a + " / " + b + " = " + c +"<br>");
+
+            c = a % b ;
+            document.write(a + " sisa bagi " + b + " = " + c +"<br>");
+
+            // penggabungan kata
+            // segala variabel yang diberi tanda petik menjadi string
+            var a = "10" + "5";
+            var b = 10 * "5";// selain plus maka sistem tidak di proses menggunakan aritmatika
+            var c = "10" * "lima"; // NaN artinya tidak valid
+            console.log(a); 
+            console.log(b); 
+            console.log(c); 
+
+        </script>
+    </body>
+</html>
